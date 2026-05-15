@@ -112,8 +112,6 @@ The database contains 8 main tables:
 | sample_data.sql           | Inserts sample data for testing and demonstration                  |
 | advanced_objects.sql      | Creates indexes, views, stored procedures, functions, and triggers |
 | security_optimization.sql | Creates roles, privileges, backup notes, and optimization checks   |
-| queries_demo.sql          | Contains demo queries for testing and presentation                 |
-
 ---
 
 ## 8. Correct SQL Execution Order
@@ -124,20 +122,40 @@ Run the SQL files in this order:
 2. sample_data.sql
 3. advanced_objects.sql
 4. security_optimization.sql
-5. queries_demo.sql
 
 This order is important because the tables must be created before inserting sample data. Advanced database objects should be created after the sample data is available, and security privileges should be created after all database objects already exist.
 
 ---
 
-## 9. Sample Data
+## 9. Backup and Restore
+
+Backup command:
+
+```bash
+mysqldump -u root -p restaurant_management > restaurant_management_backup.sql
+```
+
+Restore command:
+
+```bash
+mysql -u root -p restaurant_management < restaurant_management_backup.sql
+```
+
+On macOS, backup to Desktop:
+
+```bash
+mysqldump -u root -p restaurant_management > ~/Desktop/restaurant_management_backup.sql
+```
+
+---
+
+## 10. Sample Data
 
 The sample data includes:
 
 | Data Type         | Number of Records |
 | ----------------- | ----------------: |
-| Regular customers |                10 |
-| Guest option      |                 1 |
+| Customers         |                11 |
 | Restaurant tables |                 5 |
 | Employees         |                 8 |
 | Menu items        |                10 |
@@ -156,7 +174,7 @@ The sample data is designed to be logically consistent:
 
 ---
 
-## 10. Streamlit Application
+## 11. Streamlit Application
 
 The Streamlit application is divided into separate modules:
 
@@ -174,7 +192,7 @@ The Streamlit application is divided into separate modules:
 
 ---
 
-## 11. Installation
+## 12. Installation
 
 Install the required Python packages:
 
@@ -202,7 +220,7 @@ pip install streamlit mysql-connector-python pandas
 
 ---
 
-## 12. Database Configuration
+## 13. Database Configuration
 
 Before running the application, update the MySQL connection settings in:
 
@@ -223,7 +241,7 @@ Make sure MySQL Server is running before starting the Streamlit application.
 
 ---
 
-## 13. How to Run the Application
+## 14. How to Run the Application
 
 After running the SQL files and installing the required packages, start the app with:
 
@@ -235,7 +253,7 @@ The application will open in your browser.
 
 ---
 
-## 14. Demo Accounts
+## 15. Demo Accounts
 
 The system uses the employees table for login.
 
@@ -248,7 +266,7 @@ The system uses the employees table for login.
 
 ---
 
-## 15. Main Workflows
+## 16. Main Workflows
 
 ### Reservation Workflow
 
@@ -282,7 +300,7 @@ Invoice statuses include:
 
 ---
 
-## 16. Reports
+## 17. Reports
 
 The system provides the following reports:
 
@@ -292,28 +310,6 @@ The system provides the following reports:
 * Customer visit summary
 
 These reports help managers monitor restaurant performance and support decision-making.
-
----
-
-## 17. Backup and Restore
-
-Backup command:
-
-```bash
-mysqldump -u root -p restaurant_management > restaurant_management_backup.sql
-```
-
-Restore command:
-
-```bash
-mysql -u root -p restaurant_management < restaurant_management_backup.sql
-```
-
-On macOS, backup to Desktop:
-
-```bash
-mysqldump -u root -p restaurant_management > ~/Desktop/restaurant_management_backup.sql
-```
 
 ---
 
@@ -345,6 +341,6 @@ Possible future improvements include:
 
 ## 20. Demo Video
 
-YouTube demo link:
+YouTube demo link: https://youtu.be/nlmHpWP_P0U
 
 Add your video link here.
