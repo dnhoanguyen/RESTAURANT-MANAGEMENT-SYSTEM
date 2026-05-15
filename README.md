@@ -60,7 +60,7 @@ Payment-related actions such as marking invoices as paid or cancelling unpaid in
 
 ## 5. Project Structure
 
-'''restaurant_management_system/
+<pre>restaurant_management_system/
 ├── sql/
 │   ├── schema.sql
 │   ├── sample_data.sql
@@ -82,7 +82,7 @@ Payment-related actions such as marking invoices as paid or cancelling unpaid in
 ├── EER.png
 ├── EERDiagram.mwb
 └── README.md
-'''
+<pre>
 ---
 
 ## 6. Database Design
