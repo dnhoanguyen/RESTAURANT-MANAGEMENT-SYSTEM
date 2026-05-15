@@ -60,7 +60,7 @@ Payment-related actions such as marking invoices as paid or cancelling unpaid in
 
 ## 5. Project Structure
 
-restaurant_management_system/
+'''restaurant_management_system/
 ├── sql/
 │   ├── schema.sql
 │   ├── sample_data.sql
@@ -79,16 +79,10 @@ restaurant_management_system/
 │   ├── invoice_module.py
 │   └── report_module.py
 │
-├── screenshots/
-│   ├── erd.png
-│   ├── mysql_tables.png
-│   ├── streamlit_login.png
-│   ├── streamlit_dashboard.png
-│   └── report_outputs.png
-│
-├── README.md
-└── report.pdf
-
+├── EER.png
+├── EERDiagram.mwb
+└── README.md
+'''
 ---
 
 ## 6. Database Design
