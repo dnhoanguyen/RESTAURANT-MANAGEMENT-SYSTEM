@@ -82,7 +82,7 @@ Payment-related actions such as marking invoices as paid or cancelling unpaid in
 ├── EER.png
 ├── EERDiagram.mwb
 └── README.md
-<pre>
+    
 ---
 
 ## 6. Database Design
