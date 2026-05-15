@@ -58,34 +58,7 @@ Payment-related actions such as marking invoices as paid or cancelling unpaid in
 
 ---
 
-## 5. Project Structure
-
-<pre>restaurant_management_system/
-├── sql/
-│   ├── schema.sql
-│   ├── sample_data.sql
-│   ├── advanced_objects.sql
-│   ├── security_optimization.sql
-│   └── queries_demo.sql
-│
-├── app/
-│   ├── db_config.py
-│   ├── app.py
-│   ├── auth.py
-│   ├── customer_module.py
-│   ├── table_module.py
-│   ├── menu_module.py
-│   ├── reservation_module.py
-│   ├── invoice_module.py
-│   └── report_module.py
-│
-├── EER.png
-├── EERDiagram.mwb
-└── README.md
-    
----
-
-## 6. Database Design
+## 5. Database Design
 
 The database contains 8 main tables:
 
@@ -102,7 +75,7 @@ The database contains 8 main tables:
 
 ---
 
-## 7. SQL Files
+## 6. SQL Files
 
 | File                      | Description                                                        |
 | ------------------------- | ------------------------------------------------------------------ |
@@ -112,7 +85,7 @@ The database contains 8 main tables:
 | security_optimization.sql | Creates roles, privileges, backup notes, and optimization checks   |
 ---
 
-## 8. Correct SQL Execution Order
+## 7. Correct SQL Execution Order
 
 Run the SQL files in this order:
 
@@ -125,7 +98,7 @@ This order is important because the tables must be created before inserting samp
 
 ---
 
-## 9. Backup and Restore
+## 8. Backup and Restore
 
 Backup command:
 
@@ -147,7 +120,7 @@ mysqldump -u root -p restaurant_management > ~/Desktop/restaurant_management_bac
 
 ---
 
-## 10. Sample Data
+## 9. Sample Data
 
 The sample data includes:
 
@@ -172,7 +145,7 @@ The sample data is designed to be logically consistent:
 
 ---
 
-## 11. Streamlit Application
+## 10. Streamlit Application
 
 The Streamlit application is divided into separate modules:
 
@@ -190,7 +163,7 @@ The Streamlit application is divided into separate modules:
 
 ---
 
-## 12. Installation
+## 11. Installation
 
 Install the required Python packages:
 
@@ -218,7 +191,7 @@ pip install streamlit mysql-connector-python pandas
 
 ---
 
-## 13. Database Configuration
+## 12. Database Configuration
 
 Before running the application, update the MySQL connection settings in:
 
@@ -239,7 +212,7 @@ Make sure MySQL Server is running before starting the Streamlit application.
 
 ---
 
-## 14. How to Run the Application
+## 13. How to Run the Application
 
 After running the SQL files and installing the required packages, start the app with:
 
@@ -251,7 +224,7 @@ The application will open in your browser.
 
 ---
 
-## 15. Demo Accounts
+## 14. Demo Accounts
 
 The system uses the employees table for login.
 
@@ -264,7 +237,7 @@ The system uses the employees table for login.
 
 ---
 
-## 16. Main Workflows
+## 15. Main Workflows
 
 ### Reservation Workflow
 
@@ -298,7 +271,7 @@ Invoice statuses include:
 
 ---
 
-## 17. Reports
+## 16. Reports
 
 The system provides the following reports:
 
@@ -311,7 +284,7 @@ These reports help managers monitor restaurant performance and support decision-
 
 ---
 
-## 18. Notes and Limitations
+## 17. Notes and Limitations
 
 * Passwords are stored as plain text for demonstration purposes.
 * In a real system, password hashing should be applied.
@@ -322,7 +295,7 @@ These reports help managers monitor restaurant performance and support decision-
 
 ---
 
-## 19. Future Improvements
+## 18. Future Improvements
 
 Possible future improvements include:
 
@@ -335,3 +308,29 @@ Possible future improvements include:
 * Refund management for paid invoices
 * More advanced revenue dashboards
 
+---
+
+## 19. Project Structure
+
+<pre>restaurant_management_system/
+├── sql/
+│   ├── schema.sql
+│   ├── sample_data.sql
+│   ├── advanced_objects.sql
+│   ├── security_optimization.sql
+│   └── queries_demo.sql
+│
+├── app/
+│   ├── db_config.py
+│   ├── app.py
+│   ├── auth.py
+│   ├── customer_module.py
+│   ├── table_module.py
+│   ├── menu_module.py
+│   ├── reservation_module.py
+│   ├── invoice_module.py
+│   └── report_module.py
+│
+├── EER.png
+├── EERDiagram.mwb
+└── README.md
