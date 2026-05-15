@@ -3,6 +3,10 @@
 A database-driven Restaurant Management System built with **MySQL** and **Python Streamlit**.
 The system supports customer management, table management, menu management, reservations, invoices, payments, reporting, and role-based access control.
 
+## Demo Video
+
+YouTube demo link: https://youtu.be/nlmHpWP_P0U
+
 ---
 
 ## 1. Project Overview
@@ -337,10 +341,3 @@ Possible future improvements include:
 * Refund management for paid invoices
 * More advanced revenue dashboards
 
----
-
-## 20. Demo Video
-
-YouTube demo link: https://youtu.be/nlmHpWP_P0U
-
-Add your video link here.
